@@ -1,0 +1,20 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "ESNext",
+    "target": "ES2017",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["src/ui/*"],
+      "@lib/*": ["src/lib/*"],
+      "@code-generators/*": ["src/code-generators/*"],
+      "@services/*": ["src/services/*"],
+      "@domain/*": ["src/domain/*"],
+      "@domain-lib/*": ["src/domain-lib/*"],
+      "@domain-components": ["src/domain-components/*"]
+    }
+  },
+  "include": ["src"]
+}
